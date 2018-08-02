@@ -1,0 +1,15 @@
+
+<h1>Hello {{name}}!</h1>
+
+<ul>
+<li>Age: {{age}}</li>
+<li>Email: {{email}}</li>
+<li>{{address.street}},{{address.city}},{{address.state}}</li>
+</ul>
+<button (click)="onClick()">CLICK ME</button>
+<h1>Hobbies</h1>
+<ul>
+  <li *ngFor= "let i of hobbies">{{i}}</li>
+  <li *ngFor= "let hobby of hobbies; let i = index">{{i}}: {{hobby}}</li>
+</ul>
+
