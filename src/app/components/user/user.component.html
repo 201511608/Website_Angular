@@ -7,7 +7,18 @@
 <li>{{address.street}},{{address.city}},{{address.state}}</li>
 </ul>
 <button (click)="onClick()">CLICK ME</button>
+
 <h1>Hobbies</h1>
+
+ <!-- Box  -->
+<form id="myForm"(submit)="addHobby(hobby.value)">
+  <div>
+    <label for="">Hobby</label>
+    <input type="text" #hobby>
+  </div>
+</form>
+
+
 <ul>
   <li *ngFor= "let i of hobbies">{{i}}</li>
   <li *ngFor= "let hobby of hobbies; let i = index">{{i}}: {{hobby}}</li>

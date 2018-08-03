@@ -42,7 +42,15 @@ this.hellow=1616;   // Number or string
   }
 
 onClick(){
+  this.name = "MIDAS SUPER"
+  this.hobbies.push('hobbies Push Added in Array')
   console.log('Button Clicked');
+}
+
+addHobby(hobby){
+  console.log(hobby);
+  this.hobbies.unshift(hobby);
+  return false;
 }
 
 }
